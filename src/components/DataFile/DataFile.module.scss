@@ -1,6 +1,9 @@
 @import "./variables.scss";
 
 .dataCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 375px;
   font-size: small;
   font-family: "Open Sans", sans-serif;
@@ -94,8 +97,6 @@
     width: 200px;
     border: solid 2px white;
     border-radius: 10px;
-    margin-top: 50px;
-    margin-left: 35px;
     padding: 10px;
   }
 
