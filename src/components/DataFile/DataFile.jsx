@@ -7,20 +7,24 @@ const DataFile = (props) => {
 
   return (
     <>
-   
+      <section className={styles.content}>
+        <section className={styles.dataCard}>
+          <section className={styles.title}>
+            <h1>{name}</h1>
 
-    <section className={styles.content}>
-      
-      <h2>{name}</h2>
+            <h2>{role}</h2>
+          </section>
+          <div className={styles.counter}>
+            <button onClick={() => setCount(count + 1)}>+</button>
 
-      <h2>{role}</h2>
+            <div className={styles.count}>
+              <h3>{count}</h3>
+            </div>
 
-      <div className={styles.counter}>
-        <button onClick={() => setCount(count - 1)}>-</button>
-        <h3>{count}</h3>
-        <button onClick={() => setCount(count + 1)}>+</button>
-      </div>
-    </section>
+            <button onClick={() => setCount(count - 1)}>-</button>
+          </div>
+        </section>
+      </section>
     </>
   );
 };
