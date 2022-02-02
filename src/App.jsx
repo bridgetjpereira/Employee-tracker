@@ -1,4 +1,3 @@
-// import React, { useState } from "react";
 import styles from "./App.module.scss";
 import DataFile from "./components/DataFile";
 import team from "./Data/team";
