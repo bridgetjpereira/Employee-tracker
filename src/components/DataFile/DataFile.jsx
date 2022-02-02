@@ -21,7 +21,16 @@ const DataFile = (props) => {
               <h3>{count}</h3>
             </div>
 
-            <button onClick={() => setCount(count - 1)}>-</button>
+            <button
+              onClick={() => {
+                if (count === 0) {
+                  return;
+                }
+                setCount(count - 1);
+              }}
+            >
+              -
+            </button>
           </div>
         </section>
       </section>
